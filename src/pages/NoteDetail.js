@@ -36,14 +36,14 @@ function NoteDetail() {
       <p><strong>Description:</strong> {note.description}</p>
       <p><strong>Subject:</strong> {note.category}</p>
       <p><strong>Price:</strong> ₹{note.price}</p>
-      <a
-        href={note.paymentLink || "#"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="buy-button"
-      >
-        Buy Now
-      </a>
+      <button
+  onClick={() => window.open(note.paymentLink || "#", "_blank")}
+  className="mt-4 bg-blue-600 text-white text-lg font-medium py-2 px-6 rounded-2xl hover:bg-blue-700 transition-colors duration-300"
+>
+  Buy Now
+</button>
+
+
 
       <p><strong>Uploaded on:</strong> {note.timestamp?.toDate?.().toLocaleDateString("en-IN")}</p>
 
