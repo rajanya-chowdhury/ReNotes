@@ -1,0 +1,71 @@
+.browse-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.browse-container h2 {
+  margin-bottom: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.category-tag {
+  background: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.note-card p {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #444;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+.btn.small {
+  padding: 8px 12px;
+  font-size: 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btn.small:hover {
+  background: #005ecb;
+}
