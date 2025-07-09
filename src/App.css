@@ -297,3 +297,12 @@ body.dark {
   text-decoration: underline;
 }
 
+.note-card {
+  background-color: white;
+  color: black;
+}
+
+.dark .note-card {
+  background-color: #1f2937; /* tailwind's zinc-800 */
+  color: white;
+}
