@@ -1,12 +1,10 @@
-// App.js
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-
 import HomePage from "./pages/HomePage";
 import UploadPage from "./pages/UploadPage";
 import BrowsePage from "./pages/BrowsePage";
-import NoteDetail from "./pages/NoteDetail";
 import Navbar from "./components/Navbar";
+import NoteDetail from "./pages/NoteDetail";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
